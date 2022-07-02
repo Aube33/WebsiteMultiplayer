@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Website Multi - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ef517441fc.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <canvas id="canvas"></canvas>
+
+      <div class="content">
+      </div>
+
+    <script>
+      var canvas = document.getElementById("canvas");
+      canvas.width  = window.innerWidth;
+      canvas.height = window.innerHeight;
+
+      window.addEventListener("resize", function(){
+        canvas.width  = window.innerWidth;
+        canvas.height = window.innerHeight;
+      })
+    </script>
+
+
+    <script src="./js/socket.io/socket.io.js"></script>
+    <script>
+        var socket = io();
+    </script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
