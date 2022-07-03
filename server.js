@@ -21,7 +21,8 @@ app.ready().then(() => {
           name: "Guest",
           color: "#"+((1<<24)*Math.random()|0).toString(16),
           id: socket.id,
-          screen: [1920,1080]
+          screen: [1920,1080],
+          type: 0
         };
 
         //Récupération de la nouvelle position du joueur
@@ -29,6 +30,11 @@ app.ready().then(() => {
           players[socket.id].x=data.mx
           players[socket.id].y=data.my
           players[socket.id].screen=data.myScreen
+        });
+
+        //Récupération du nouveau state du curseur du joueur
+        socket.on('mouse_cursor', function (data) {
+          players[socket.id].type=data.cursor
         });
 
         //Emission des nouvelles positions des joueurs
