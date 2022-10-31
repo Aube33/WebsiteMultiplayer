@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Website Multi - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/aed1ad2389.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <canvas id="canvas"></canvas>
+
+    <div class="content">
+      <div class="header">
+        <h1 class="text"><u class="text">Website Multiplayer</u></h1>
+        <div class="menubar">
+          <a href="#" class="menubar-links" id="menubar-links-home">Home</a>
+          <a href="#" class="menubar-links" id="menubar-links-painting">Painting</a>
+          <a href="#" class="menubar-links" id="menubar-links-objects">Objects</a>
+          <a href="#" class="menubar-links" id="menubar-links-songbox">SongBox</a>
+          <a href="#" class="menubar-links" id="menubar-links-park">Park</a>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var canvas = document.getElementById("canvas");
+      canvas.width  = window.innerWidth;
+      canvas.height = window.innerHeight;
+
+      window.addEventListener("resize", function(){
+        canvas.width  = window.innerWidth;
+        canvas.height = window.innerHeight;
+      })
+    </script>
+
+
+    <script src="./js/socket.io/socket.io.js"></script>
+    <script>
+        var socket = io();
+    </script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

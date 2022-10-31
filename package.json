@@ -1,0 +1,12 @@
+{
+  "name": "websitecollab",
+  "version": "1.0.0",
+  "description": "A simple website where you can collab with people",
+  "author": "Aube",
+  "dependencies": {
+    "@fastify/static": "^5.0.2",
+    "fastify": "^3.29.0",
+    "fastify-socket.io": "^3.0.0",
+    "socket.io": "^4.5.1"
+  }
+}
