@@ -12,4 +12,4 @@ A simple mouse collaboration system on webpage with socket.io
 * Start web server
 `node server.js`
 
-Access to webserver at https://localhost:3000
+* Access the webpage at <https://localhost:3000>
