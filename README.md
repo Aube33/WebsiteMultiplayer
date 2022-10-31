@@ -6,10 +6,10 @@ A simple mouse collaboration system on webpage with socket.io
 <hr>
 
 ## How to use:
-> Start installing needed npm packages
+* Start installing needed npm packages
 `npm i`
 
-> Start web server
+* Start web server
 `node server.js`
 
 Access to webserver at https://localhost:3000
